@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter no.1: <input type="text" placeholder="enter" id="n1">
+    enter no.2: <input type="text" placeholder="enter" id="n2">
+    <button id="add">add</button>
+    <p id="res"></p>
+
+    <script>
+        n1=document.getElementById('n1')
+        n2=document.getElementById('n2')
+    add=document.getElementById('add')
+    add.addEventListener('click',function fun(){
+        let res=document.getElementById('res')
+        res.innerHTML=parseInt(n1.value)+parseInt(n2.value)
+    })
+
+
+    </script>
+</body>
+</html>
